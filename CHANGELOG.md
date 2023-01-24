@@ -1,3 +1,23 @@
+## 5.2.4
+### Desktop (Windows)
+- Calling pick/save file dialog will no longer freeze ui thread.
+
+## 5.2.3
+### iOS
+- Fixes an issue when picking live photos where the key photo was changed.
+
+## 5.2.2
+### Android
+- Fix deprecation warning for `getParcelable(String key)` method.
+
+## 5.2.1
+#### Android
+- Removed build constant TIRAMISU to fix build error if targeting API 32 or less ([#1140](https://github.com/miguelpruivo/flutter_file_picker/issues/1140), [#1124](https://github.com/miguelpruivo/flutter_file_picker/issues/1124))
+
+## 5.2.0+1
+- Reverts 5.2.0 due to multiple regressions.
+
+
 ## 5.2.0
 
 #### Android
