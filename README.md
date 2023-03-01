@@ -1,5 +1,6 @@
 ![fluter_file_picker](https://user-images.githubusercontent.com/27860743/64064695-b88dab00-cbfc-11e9-814f-30921b66035f.png)
 <p align="center">
+
  <a href="https://pub.dartlang.org/packages/file_picker">
     <img alt="File Picker" src="https://img.shields.io/pub/v/file_picker.svg">
   </a>
@@ -19,6 +20,10 @@
 
 # File Picker
 A package that allows you to use the native file explorer to pick single or multiple files, with extensions filtering support.
+<br>
+# No Caching*
+Fork of "miguelpruivo/flutter_file_picker" but avoids caching in most cases.
+<br>
 
 ## Currently supported features
 * Uses OS default native pickers

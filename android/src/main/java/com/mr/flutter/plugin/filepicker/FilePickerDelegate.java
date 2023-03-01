@@ -281,6 +281,27 @@ public class FilePickerDelegate implements PluginRegistry.ActivityResultListener
                 return;
             }
         }
+        else{
+              if (!this.permissionManager.isPermissionGranted(Manifest.permission.READ_MEDIA_IMAGES)) {
+                this.permissionManager.askForPermission(Manifest.permission.READ_MEDIA_IMAGES, REQUEST_CODE);
+               
+            }
+            if (!this.permissionManager.isPermissionGranted(Manifest.permission.READ_MEDIA_VIDEO)) {
+                this.permissionManager.askForPermission(Manifest.permission.READ_MEDIA_VIDEO, REQUEST_CODE);
+               
+            }
+            if (!this.permissionManager.isPermissionGranted(Manifest.permission.READ_MEDIA_AUDIO)) {
+                this.permissionManager.askForPermission(Manifest.permission.READ_MEDIA_AUDIO, REQUEST_CODE);
+               
+            }
+            if (!this.permissionManager.isPermissionGranted(Manifest.permission.READ_EXTERNAL_STORAGE)) {
+                this.permissionManager.askForPermission(Manifest.permission.READ_EXTERNAL_STORAGE, REQUEST_CODE);
+                return;
+            }
+
+            
+
+        }
         this.startFileExplorer();
     }
 

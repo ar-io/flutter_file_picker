@@ -16,7 +16,11 @@ Future<List<PlatformFile>> filePathsToPlatformFiles(
       final file = File(filePath);
 
       if (withReadStream) {
-        return createPlatformFile(file, null, ([int? s, int? e]) => file.openRead(s, e).map((c) => c as Uint8List));
+        return createPlatformFile(
+            file,
+            null,
+            ([int? s, int? e]) =>
+                file.openRead(s, e).map((c) => c as Uint8List));
       }
 
       if (!withData) {
